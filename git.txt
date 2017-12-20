@@ -1,0 +1,265 @@
+
+jafaris@jafaris-PC MINGW64 /c/xampp/htdocs/positioning
+$ touch test.html
+
+jafaris@jafaris-PC MINGW64 /c/xampp/htdocs/positioning
+$ touch app.js
+
+jafaris@jafaris-PC MINGW64 /c/xampp/htdocs/positioning
+$ git init
+Initialized empty Git repository in C:/xampp/htdocs/positioning/.git/
+
+jafaris@jafaris-PC MINGW64 /c/xampp/htdocs/positioning (master)
+$ git config --global user.name 'JafarFaris'
+
+jafaris@jafaris-PC MINGW64 /c/xampp/htdocs/positioning (master)
+$ git config --global user.email 'jafarfaris42@gmail.com'
+
+jafaris@jafaris-PC MINGW64 /c/xampp/htdocs/positioning (master)
+$ git add test.html
+
+jafaris@jafaris-PC MINGW64 /c/xampp/htdocs/positioning (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   test.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        app.js
+        index.html
+        index2.html
+        index3.html
+        index4.html
+
+
+jafaris@jafaris-PC MINGW64 /c/xampp/htdocs/positioning (master)
+$ git add *.html
+
+jafaris@jafaris-PC MINGW64 /c/xampp/htdocs/positioning (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   index.html
+        new file:   index2.html
+        new file:   index3.html
+        new file:   index4.html
+        new file:   test.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        app.js
+
+
+jafaris@jafaris-PC MINGW64 /c/xampp/htdocs/positioning (master)
+$ git add .
+
+jafaris@jafaris-PC MINGW64 /c/xampp/htdocs/positioning (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   app.js
+        new file:   index.html
+        new file:   index2.html
+        new file:   index3.html
+        new file:   index4.html
+        new file:   test.html
+
+
+jafaris@jafaris-PC MINGW64 /c/xampp/htdocs/positioning (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   app.js
+        new file:   index.html
+        new file:   index2.html
+        new file:   index3.html
+        new file:   index4.html
+        new file:   test.html
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   test.html
+
+
+jafaris@jafaris-PC MINGW64 /c/xampp/htdocs/positioning (master)
+$ git add .
+
+jafaris@jafaris-PC MINGW64 /c/xampp/htdocs/positioning (master)
+$ git commit
+[master (root-commit) 77dcc34]  Initial commit
+ 6 files changed, 346 insertions(+)
+ create mode 100644 app.js
+ create mode 100644 index.html
+ create mode 100644 index2.html
+ create mode 100644 index3.html
+ create mode 100644 index4.html
+ create mode 100644 test.html
+
+jafaris@jafaris-PC MINGW64 /c/xampp/htdocs/positioning (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+jafaris@jafaris-PC MINGW64 /c/xampp/htdocs/positioning (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   app.js
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+jafaris@jafaris-PC MINGW64 /c/xampp/htdocs/positioning (master)
+$ git add .
+
+jafaris@jafaris-PC MINGW64 /c/xampp/htdocs/positioning (master)
+$ git commit -m 'Changes app.js'
+[master d7692c0] Changes app.js
+ 1 file changed, 1 insertion(+)
+
+jafaris@jafaris-PC MINGW64 /c/xampp/htdocs/positioning (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+jafaris@jafaris-PC MINGW64 /c/xampp/htdocs/positioning (master)
+$ touch .gitignore
+
+jafaris@jafaris-PC MINGW64 /c/xampp/htdocs/positioning (master)
+$ touch log.txt
+
+jafaris@jafaris-PC MINGW64 /c/xampp/htdocs/positioning (master)
+$ git add .
+
+jafaris@jafaris-PC MINGW64 /c/xampp/htdocs/positioning (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   .gitignore
+
+
+jafaris@jafaris-PC MINGW64 /c/xampp/htdocs/positioning (master)
+$ git add .
+
+jafaris@jafaris-PC MINGW64 /c/xampp/htdocs/positioning (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   .gitignore
+        new file:   test1/app1.js
+
+
+jafaris@jafaris-PC MINGW64 /c/xampp/htdocs/positioning (master)
+$ git branch login
+
+jafaris@jafaris-PC MINGW64 /c/xampp/htdocs/positioning (master)
+$ git commit -m 'Another changes'
+[master f8c8547] Another changes
+ 2 files changed, 3 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 test1/app1.js
+
+jafaris@jafaris-PC MINGW64 /c/xampp/htdocs/positioning (master)
+$ git checkout login
+Switched to branch 'login'
+
+jafaris@jafaris-PC MINGW64 /c/xampp/htdocs/positioning (login)
+$ touch login.html
+
+jafaris@jafaris-PC MINGW64 /c/xampp/htdocs/positioning (login)
+$ git add .
+
+jafaris@jafaris-PC MINGW64 /c/xampp/htdocs/positioning (login)
+$ git commit -m 'login form'
+[login 4eb65a5] login form
+ 3 files changed, 15 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 login.html
+ create mode 100644 test1/app1.js
+
+jafaris@jafaris-PC MINGW64 /c/xampp/htdocs/positioning (login)
+$ git checkout master
+Switched to branch 'master'
+
+jafaris@jafaris-PC MINGW64 /c/xampp/htdocs/positioning (master)
+$ git checkout login
+error: The following untracked working tree files would be overwritten by checko                                                                                                                ut:
+        login.html
+Please move or remove them before you switch branches.
+Aborting
+
+jafaris@jafaris-PC MINGW64 /c/xampp/htdocs/positioning (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        login.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+jafaris@jafaris-PC MINGW64 /c/xampp/htdocs/positioning (master)
+$ git add .
+
+jafaris@jafaris-PC MINGW64 /c/xampp/htdocs/positioning (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   login.html
+
+
+jafaris@jafaris-PC MINGW64 /c/xampp/htdocs/positioning (master)
+$ git checkout login
+Switched to branch 'login'
+
+jafaris@jafaris-PC MINGW64 /c/xampp/htdocs/positioning (login)
+$ git status
+On branch login
+nothing to commit, working tree clean
+
+jafaris@jafaris-PC MINGW64 /c/xampp/htdocs/positioning (login)
+$ git checkout master
+Switched to branch 'master'
+
+jafaris@jafaris-PC MINGW64 /c/xampp/htdocs/positioning (master)
+$ git merge login
+Merge made by the 'recursive' strategy.
+ login.html | 12 ++++++++++++
+ 1 file changed, 12 insertions(+)
+ create mode 100644 login.html
+
+jafaris@jafaris-PC MINGW64 /c/xampp/htdocs/positioning (master)
+$
